@@ -6,6 +6,14 @@
 
 A WordPress plugin that shares identity and entitlements with a hosted LMS. Enrollments and sales are mirrored over authenticated webhooks, learners cross from the LMS into WordPress through signed single-use links, and membership checks are answered locally.
 
+## At a glance
+
+**Problem.** A course business sells on a hosted LMS and runs its community and downloads on WordPress. The two platforms share no users and no purchases, so without an integration learners need a second login and access in WordPress has to be kept in step by hand.
+
+**What I built.** This plugin. Purchases and enrollments reach WordPress over authenticated webhooks, learners cross from the LMS with one click through signed single-use links, and access checks are answered locally, without calling the LMS.
+
+**Result.** It ran in production for an online course business: one sign-in for learners, and enrollments, sales and refunds reaching WordPress on their own. The two bugs that production surfaced are fixed and documented in [DECISIONS.md](DECISIONS.md).
+
 ## Executive Summary
 
 A business selling courses on a hosted platform almost always runs its community, downloads and marketing on WordPress. The two do not share a user table, an entitlement model or a session, so the seam between them becomes the operator's problem: duplicate logins, manual CSV exports, and members who paid yesterday and cannot open anything today.
